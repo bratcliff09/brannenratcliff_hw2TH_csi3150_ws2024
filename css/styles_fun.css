@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+  --bg-primary: #0e0d29ff;
+  --bg-secondary: #05051c;
+  --font-color-primary: #ffffff;
+  --font-color-secondary: #ff82c2;
+  --backup-primary: #dde0dcff;
+  --backup-secondary: #303055;
+  --border-primary: #464278ff;
+  --cta-color: #ffd943;
+  --opacity: hsla(0, 0%, 100%, 0.037);
+}
+
+body {
+  background: var(--bg-primary);
+}
+
+header {
+  background: var(--bg-secondary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+  height: 90px;
+}
+
+header h2 {
+  color: var(--font-color-primary);
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  gap: 21px;
+  list-style: none;
+  font-weight: 500;
+}
+
+header nav ul li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--font-color-secondary);
+  transition: color 0.2s ease;
+}
+
+header nav ul li:hover a {
+  color: var(--font-color-primary);
+}
+
+main {
+  margin: 0 40px;
+}
+
+.hero_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.hero_section h1 {
+  color: var(--font-color-primary);
+  font-size: 43px;
+}
+
+/*Presets--------------*/
+
+.part h2 {
+  color: var(--font-color-secondary);
+  margin-bottom: 27px;
+  margin-top: 11px;
+  filter: drop-shadow(0px 0px 2px #000001);
+}
+
+.part h3 {
+  font-size: 26px;
+  color: var(--font-color-primary);
+  margin-bottom: 10px;
+}
+
+.part p {
+  font-size: 18px;
+  color: var(--font-color-primary);
+}
+
+.part a {
+  font-size: 18px;
+  color: var(--font-color-secondary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.part a:hover {
+  color: var(--font-color-primary);
+}
+
+.part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  background: var(--opacity);
+  border: 2px solid var(--border-primary);
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 12px;
+}
+
+.buffer {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 30px;
+  min-height: 130px;
+}
+
+/*Specific Elements-----------------------*/
+
+#favorite_book h2 {
+  margin-top: 0;
+}
+
+#favorite_book .left-side img {
+  width: 150px;
+}
+
+#favorite_book .right-side a {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#favorite_tv .left-side iframe {
+  width: 400px;
+  height: 225px;
+  border: 0;
+}
+
+hr {
+  display: none;
+}
+
+/*Footer---------------------------*/
+
+footer {
+  background: var(--bg-secondary);
+  margin-top: 29px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 55px;
+}
+
+footer .branding-c {
+  color: var(--font-color-primary);
+  flex: 2;
+}
+
+footer .branding-c h2 {
+  margin-top: 0;
+  margin-bottom: 27px;
+  font-size: 25px;
+}
+
+footer .branding-c h3 {
+  font-size: 18px;
+}
+
+footer .branding-c p {
+  font-size: 16px;
+}
+
+footer .links-c {
+  flex: 2;
+}
+
+footer .links-c h4 {
+  color: var(--font-color-secondary);
+  font-size: 21px;
+  margin-bottom: 8px;
+}
+
+footer .links-c ul {
+  list-style: none;
+  font-weight: 500;
+}
+
+footer .links-c ul li a {
+  text-decoration: none;
+  color: var(--font-color-primary);
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  line-height: 44px;
+  transition: color 0.2s ease;
+}
+
+footer .links-c ul li a:hover {
+  color: var(--font-color-secondary);
+}
+
+footer .links-c ul li i {
+  font-size: 30px;
+}
+
+footer .cta {
+  flex: 3;
+}
+
+footer .cta h4 {
+  color: var(--cta-color);
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+footer .cta button {
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bolder;
+  background: var(--cta-color);
+  border: 1px solid var(--cta-color);
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+footer .cta button:hover {
+  background: var(--bg-secondary);
+  color: var(--cta-color);
+  border-color: var(--cta-color);
+}

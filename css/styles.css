@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+  --bg-primary: #0e0d29ff;
+  --bg-secondary: #05051c;
+  --font-color-primary: #ffffff;
+  --font-color-secondary: #ff82c2;
+  --backup-primary: #dde0dcff;
+  --backup-secondary: #303055;
+  --border-primary: #464278ff;
+  --cta-color: #ffd943;
+  --opacity: hsla(0, 0%, 100%, 0.037);
+}
+
+body {
+  background: var(--bg-primary);
+}
+
+header {
+  background: var(--bg-secondary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+  height: 90px;
+}
+
+header h2 {
+  color: var(--font-color-primary);
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  gap: 21px;
+  list-style: none;
+  font-weight: 500;
+}
+
+header nav ul li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--font-color-secondary);
+  transition: color 0.2s ease;
+}
+
+header nav ul li:hover a {
+  color: var(--font-color-primary);
+}
+
+/*Hero--------------------*/
+
+.hero_section {
+  background: url(../../assets/img/herobg_edited.jpg) no-repeat center;
+  background-size: cover;
+  background-blend-mode: lighten;
+  background-color: var(--bg-primary);
+  display: flex;
+  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 470px;
+}
+
+.hero_section h1 {
+  font-size: 43px;
+  color: var(--font-color-primary);
+  filter: drop-shadow(0px 0px 2px #000000);
+}
+
+.hero_section h2 {
+  font-size: 35px;
+  margin-bottom: 24px;
+  color: var(--font-color-primary);
+  filter: drop-shadow(0px 0px 2px #000000);
+}
+
+.hero_section button {
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bolder;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: var(--bg-primary);
+  background: var(--cta-color);
+  border: 1px solid var(--cta-color);
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.hero_section button:hover {
+  background: var(--bg-primary);
+  color: var(--cta-color);
+}
+
+/*About Section------------------------*/
+
+.about_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 26px;
+  padding: 0 50px;
+  height: max-content;
+}
+
+.about_section .image_part {
+  gap: 0;
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+}
+
+.about_section .image_part img {
+  filter: grayscale(100%);
+  filter: hue-rotate(60%);
+  border-radius: 10px 10px 0 0;
+  width: 250px;
+}
+
+.about_section .image_part blockquote {
+  background: var(--opacity);
+  border: 2px solid var(--border-primary);
+  border-radius: 0 0 15px 15px;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  text-align: end;
+}
+
+.about_section .image_part blockquote p {
+  color: var(--font-color-primary);
+  font-size: 17px;
+}
+
+.about_section .text_part {
+  background: var(--opacity);
+  border: 2px solid var(--border-primary);
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.about_section .text_part h3 {
+  font-size: 26px;
+  color: var(--font-color-secondary);
+  margin-bottom: 29px;
+  filter: drop-shadow(0px 0px 2px #000001);
+}
+
+.about_section p {
+  color: var(--font-color-primary);
+  font-size: 20px;
+}
+
+.about_section p a {
+  text-decoration: none;
+  color: var(--font-color-secondary);
+  transition: color 0.2s ease;
+}
+
+.about_section p a:hover {
+  color: var(--font-color-primary);
+}
+
+.about_section .text_part label {
+  display: block;
+  color: var(--font-color-secondary);
+  font-size: 20px;
+  font-weight: 600;
+
+  filter: drop-shadow(0px 0px 2px #000001);
+}
+
+.about_section .text_part meter {
+  width: 50%;
+  height: 30px;
+  border: 1px solid var(--font-color-primary);
+  border-radius: 3px;
+}
+
+.about_section .text_part meter::-webkit-meter-bar {
+  background: transparent;
+  border: 1px solid var(--font-color-primary);
+  border-radius: 3px;
+}
+
+.about_section .text_part meter::-webkit-meter-optimum-value {
+  background: var(--font-color-primary);
+}
+
+/*Footer---------------------------*/
+
+footer {
+  background: var(--bg-secondary);
+  margin-top: 29px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 55px;
+}
+
+footer .branding-c {
+  color: var(--font-color-primary);
+  flex: 2;
+}
+
+footer .branding-c h2 {
+  margin-top: 0;
+  margin-bottom: 27px;
+  font-size: 25px;
+}
+
+footer .branding-c h3 {
+  font-size: 18px;
+}
+
+footer .branding-c p {
+  font-size: 16px;
+}
+
+footer .links-c {
+  flex: 2;
+}
+
+footer .links-c h4 {
+  color: var(--font-color-secondary);
+  font-size: 21px;
+  margin-bottom: 8px;
+}
+
+footer .links-c ul {
+  list-style: none;
+  font-weight: 500;
+}
+
+footer .links-c ul li a {
+  text-decoration: none;
+  color: var(--font-color-primary);
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  line-height: 44px;
+  transition: color 0.2s ease;
+}
+
+footer .links-c ul li a:hover {
+  color: var(--font-color-secondary);
+}
+
+footer .links-c ul li i {
+  font-size: 30px;
+}
+
+footer .cta {
+  flex: 3;
+}
+
+footer .cta h4 {
+  color: var(--cta-color);
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+footer .cta button {
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bolder;
+  background: var(--cta-color);
+  border: 1px solid var(--cta-color);
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+footer .cta button:hover {
+  background: var(--bg-secondary);
+  color: var(--cta-color);
+  border-color: var(--cta-color);
+}
+
+/*Firefox specific-----------------------------*/
+
+@supports (-moz-appearance: none) {
+  .about_section .text_part meter {
+    width: 50%;
+    height: 15px;
+    border: 1px solid var(--font-color-primary);
+    border-radius: 3px;
+    background: transparent;
+  }
+
+  .about_section .text_part meter::-moz-meter-bar {
+    background: var(--font-color-primary);
+  }
+}
