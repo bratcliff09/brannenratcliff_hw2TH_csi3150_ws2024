@@ -60,7 +60,7 @@ header nav ul li:hover a {
 /*Hero--------------------*/
 
 .hero_section {
-  background: url(../../assets/img/herobg_edited.jpg) no-repeat center;
+  background: url(../assets/img/herobg_edited.jpg) no-repeat center;
   background-size: cover;
   background-blend-mode: lighten;
   background-color: var(--bg-primary);
