@@ -129,10 +129,6 @@ header nav ul li:hover a {
   width: 250px;
 }
 
-.about_section .image_part br {
-  display: none;
-}
-
 .about_section .image_part blockquote {
   background: var(--opacity);
   border: 2px solid var(--border-primary);
